@@ -109,7 +109,7 @@
 
     .billbord {
         padding-top: 35px;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
         background-position: center top 30px;
         background-size: 100% auto;
     }
@@ -191,6 +191,7 @@
     }
     .feature {
         margin-bottom: 8px;
+        gap: 5px;
     }
     .service-about {
         max-width: 457px;
@@ -253,10 +254,10 @@
     }
     .consultation__text {
         font-size: 15px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
     .consultation__text p {
-        margin-bottom: 16px;
+        margin-bottom: 13px;
     }
     .item-form {
         margin-bottom: 15px;

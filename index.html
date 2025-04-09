@@ -587,18 +587,34 @@
 					searchControlProvider: 'yandex#search'
 				});
 
+				var iconSize = window.matchMedia("(max-width: 1600px)").matches ? [40, 55] : [64, 87];
+				var iconOffset = window.matchMedia("(max-width: 1600px)").matches ? [-20, -55] : [-32, -87];
+				var balloonOffset = window.matchMedia("(max-width: 1600px)").matches ? [0, -55] : [0, -87];
+
 				myPlacemark = new ymaps.Placemark([55.576559, 37.622917], {
 				}, {
 					iconLayout: 'default#image',
 					iconImageHref: 'img/pin.svg',
 					hideIconOnBalloonOpen: false,
-					iconImageSize: [64, 87],
-					iconImageOffset: [-32, -87],
-					balloonOffset: [0, -87]
+					iconImageSize: iconSize,
+					iconImageOffset: iconOffset,
+					balloonOffset: balloonOffset
 				});
 				myMap.controls.remove('searchControl');
 				myMap.behaviors.disable('scrollZoom');
 				myMap.geoObjects.add(myPlacemark);
+
+				window.matchMedia("(max-width: 1600px)").addEventListener("change", function (e) {
+					var newSize = e.matches ? [40, 55] : [64, 87];
+					var newOffset = e.matches ? [-20, -55] : [-32, -87];
+					var newBalloonOffset = e.matches ? [0, -55] : [0, -87];
+
+					myPlacemark.options.set({
+						iconImageSize: newSize,
+						iconImageOffset: newOffset,
+						balloonOffset: newBalloonOffset
+					});
+				});
 			}
 		});
 	</script>
