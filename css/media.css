@@ -566,6 +566,7 @@
     .item-document,
     .item-service {
         padding: 12px;
+        padding-bottom: 60px;
         border-radius: 14px;
     }
     .item-service__image {
@@ -623,14 +624,6 @@
         bottom: 0;
         right: 60px;
         border-radius: 0 0 8px 0;
-    }
-    .item-service__btn,
-    .item-service::after,
-    .item-service::before,
-    .item-service .row::before,
-    .item-service__bg::before,
-    .item-service__bg::after {
-        display: none;
     }
     .row.row_items > div {
         padding: 0 16px;
