@@ -564,61 +564,61 @@
         border-radius: 14px;
     }
     .item-document,
-    .item-service {
+    .item-box {
         padding: 12px;
         padding-bottom: 60px;
         border-radius: 14px;
     }
-    .item-service__image {
+    .item-box__image {
         height: 240px;
         margin-bottom: 20px;
         border-radius: 8px;
     }
-    .item-service__image img { 
+    .item-box__image img { 
         border-radius: 8px;
     }
-    .item-service__title {
+    .item-box__title {
         font-size: 17px;
         margin-bottom: 15px;
     }
     .item-document__btn,
-    .item-service__btn {
+    .item-box__btn {
         width: 48px;
         height: 48px;
         border-radius: 10px;
     }
     .item-document__btn img,
-    .item-service__btn img {
+    .item-box__btn img {
         width: 18px;
     }
     .item-document::after,
-    .item-service::after {
+    .item-box::after {
         width: 60px;
         height: 60px;
         border-radius: 24px 0 0 0;
     }
     .item-document::before,
-    .item-service::before {
+    .item-box::before {
         width: 60px;
         height: 60px;
         bottom: 60px;
         border-radius: 0 0 8px 0;
     }
     .item-document__image::before,
-    .item-service .row::before {
+    .item-box .row::before {
         width: 60px;
         height: 60px;
         bottom: 60px;
     }
     .item-document__title::before,
-    .item-service__bg::before {
+    .item-box__bg::before {
         height: 120px;
         width: 60px;
         bottom: 0;
         right: 60px;
     }
     .item-document__title::after,
-    .item-service__bg::after {
+    .item-box__bg::after {
         height: 120px;
         width: 60px;
         bottom: 0;
@@ -786,10 +786,10 @@
     .item-advantage:hover .icon-page img {
         filter: brightness(0) invert(1);
     }
-    .item-service__btn:hover {
+    .item-box__btn:hover {
         background: #ffb400;
     }
-    .item-service__btn:hover img {
+    .item-box__btn:hover img {
         filter: brightness(0);
     }
 }
@@ -834,10 +834,10 @@
     .item-advantage:active .icon-page img {
         filter: brightness(0) invert(1);
     }
-    .item-service__btn:active {
+    .item-box__btn:active {
         background: #ffb400;
     }
-    .item-service__btn:active img {
+    .item-box__btn:active img {
         filter: brightness(0);
     }
 }
