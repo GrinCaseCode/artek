@@ -574,7 +574,7 @@
         margin-bottom: 20px;
         border-radius: 8px;
     }
-    .item-service__image img {
+    .item-service__image img { 
         border-radius: 8px;
     }
     .item-service__title {
