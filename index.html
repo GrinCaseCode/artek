@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body> 
 
@@ -54,7 +54,7 @@
 										<a href="tel:+74951977737" class="phone-main">+7 (495) 197-77-37</a>
 										<div class="contacts-main__wrap">
 											<a href="mailto:tkartek@tkartek.ru" class="link-default">tkartek@tkartek.ru</a>
-											<a href="#" class="link-main">заказать звонок</a>
+											<a href="#modal-callback" class="link-main fancybox">заказать звонок</a>
 										</div>
 									</div>
 									<ul class="socials-list">
@@ -110,7 +110,7 @@
 						<a href="tel:+74951977737" class="phone-main">+7 (495) 197-77-37</a>
 						<div class="contacts-main__wrap">
 							<a href="mailto:tkartek@tkartek.ru" class="link-default">tkartek@tkartek.ru</a>
-							<a href="#" class="link-main">заказать звонок</a>
+							<a href="#modal-callback" class="link-main fancybox">заказать звонок</a>
 						</div>
 					</div>
 					<ul class="socials-list">
@@ -562,6 +562,27 @@
 		
 	</div>
 
+	<div id="modal-callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-section">Заказать звонок</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="item-form">
+					<input type="tel" placeholder="Номер телефона" class="input-phone" inputmode="numeric" required>
+				</div>
+				<input type="submit" class="btn-main" value="Отправить">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Я согласен с условиями обработки персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -573,7 +594,7 @@
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="js/common.js?ver=1.2"></script>
+	<script src="js/common.js?ver=1.4"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function () {
