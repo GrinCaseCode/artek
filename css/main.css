@@ -1237,6 +1237,7 @@ form {
 }
 .billbord_documentation .billbord__image {
 	right: 3vw;
+	top: 0;
 }
 .billbord_warehouse .descr-big,
 .billbord_logistics .descr-big {
