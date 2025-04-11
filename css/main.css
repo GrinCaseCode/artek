@@ -1235,6 +1235,9 @@ form {
 	top: 0;
 	right: 5.21vw;
 }
+.billbord_documentation .billbord__image {
+	right: 3vw;
+}
 .billbord_warehouse .descr-big,
 .billbord_logistics .descr-big {
 	max-width: 34.9vw;
